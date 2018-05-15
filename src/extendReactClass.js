@@ -36,7 +36,7 @@ export default (Component: Object, defaultStyles: Object, options: Object) => {
           writable: false
         });
 
-        this.props = props;
+        // this.props = props;
       } else {
         styles = {};
       }
