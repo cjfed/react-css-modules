@@ -36,6 +36,7 @@ export default (Component: Object, defaultStyles: Object, options: Object) => {
           writable: false
         });
 
+        // 解决子组件更新导致父组件渲染的问题
         // this.props = props;
       } else {
         styles = {};
