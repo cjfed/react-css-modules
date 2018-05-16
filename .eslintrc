@@ -2,5 +2,8 @@
     "extends": [
       "canonical",
       "canonical/mocha"
-    ]
+    ],
+    "rules": {
+      "linebreak-style": "off"
+    }
 }

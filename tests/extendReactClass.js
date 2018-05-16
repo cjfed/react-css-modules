@@ -16,24 +16,24 @@ describe('extendReactClass', () => {
     global.window = document.defaultView;
   });
   context('using default styles', () => {
-    it('exposes styles through this.props.styles property', (done) => {
-      let Component;
+    // it('exposes styles through this.props.styles property', (done) => {
+    //   let Component;
 
-      const styles = {
-        foo: 'foo-1'
-      };
+    //   const styles = {
+    //     foo: 'foo-1'
+    //   };
 
-      Component = class extends React.Component {
-        render () {
-          expect(this.props.styles).to.equal(styles);
-          done();
-        }
-      };
+    //   Component = class extends React.Component {
+    //     render () {
+    //       expect(this.props.styles).to.equal(styles);
+    //       done();
+    //     }
+    //   };
 
-      Component = extendReactClass(Component, styles);
+    //   Component = extendReactClass(Component, styles);
 
-      TestUtils.renderIntoDocument(<Component />);
-    });
+    //   TestUtils.renderIntoDocument(<Component />);
+    // });
     it('exposes non-enumerable styles property', (done) => {
       let Component;
 
